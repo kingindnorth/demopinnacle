@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="robots" content="noindex">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Image Scroll Page</title>
+  <title>Prudential Health India</title>
   <style>
     * {
       margin: 0;
@@ -23,6 +23,7 @@
       width: 100vw;
     }
 
+    .image-container picture, 
     .image-container img {
       width: 100%;
       height: 100%;
@@ -30,7 +31,6 @@
       display: block;
     }
 
-    /* Responsive Fix for Mobile */
     @media (max-width: 768px) {
       .image-container {
         height: auto;
@@ -38,18 +38,51 @@
 
       .image-container img {
         height: auto;
-        max-width: 100%;
       }
     }
   </style>
 </head>
 <body>
-  <div class="image-container"><img src="public/img1.png" alt="Image 1"></div>
-  <div class="image-container"><img src="public/img2.png" alt="Image 2"></div>
-  <div class="image-container"><img src="public/img3.png" alt="Image 3"></div>
-  <div class="image-container"><img src="public/img4.png" alt="Image 4"></div>
-  <div class="image-container"><img src="public/img5.png" alt="Image 5"></div>
-  <div class="image-container"><img src="public/img6.png" alt="Image 6"></div>
-  <!-- <div class="image-container"><img src="./public/img1.png" alt="Image 7"></div> -->
+  <div class="image-container">
+    <picture>
+      <source srcset="public/img1-mobile.png" media="(max-width: 768px)">
+      <img src="public/img1.png" alt="Image 1">
+    </picture>
+  </div>
+
+  <div class="image-container">
+    <picture>
+      <source srcset="public/img2-mobile.png" media="(max-width: 768px)">
+      <img src="public/img2.png" alt="Image 2">
+    </picture>
+  </div>
+
+  <div class="image-container">
+    <picture>
+      <source srcset="public/img3-mobile.png" media="(max-width: 768px)">
+      <img src="public/img3.png" alt="Image 3">
+    </picture>
+  </div>
+
+  <div class="image-container">
+    <picture>
+      <source srcset="public/img4-mobile.png" media="(max-width: 768px)">
+      <img src="public/img4.png" alt="Image 4">
+    </picture>
+  </div>
+
+  <div class="image-container">
+    <picture>
+      <source srcset="public/img5-mobile.png" media="(max-width: 768px)">
+      <img src="public/img5.png" alt="Image 5">
+    </picture>
+  </div>
+
+  <div class="image-container">
+    <picture>
+      <source srcset="public/img6-mobile.png" media="(max-width: 768px)">
+      <img src="public/img6.png" alt="Image 6">
+    </picture>
+  </div>
 </body>
 </html>
